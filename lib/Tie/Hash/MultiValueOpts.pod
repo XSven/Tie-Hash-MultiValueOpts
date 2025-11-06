@@ -1,0 +1,31 @@
+=pod
+
+=head1 NAME
+
+Tie::Hash::MultiValueOpts - ...
+
+=head1 SYNOPSIS
+
+  use Getopt::Std qw( getopts );
+  use Tie::Hash::MultiValueOpts ();
+
+  tie my %opts, 'Tie::Hash::MultiValueOpts';
+  $opts{ l } = [];
+  getopts( 'a:bl:', \%opts );
+
+=head1 DESCRIPTION
+
+...
+
+=head1 AUTHOR
+
+Sven Willenbuecher <sven.willenbuecher@gmx.de>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2025 by Sven Willenbuecher.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
