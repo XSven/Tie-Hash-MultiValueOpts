@@ -16,7 +16,6 @@ tie my %opts, 'Tie::Hash::MultiValueOpts';
 $opts{ l } = [];
 
 local @ARGV = ();
-
 ok getopts( 'a:bl:', \%opts ), 'Successful execution';
 ok not( exists $opts{ a } ),   'Option "a" has no argument'; ## no critic ( RequireTestLabels )
 ok not( exists $opts{ b } ),   'Flag "b" is not set (false)'; ## no critic ( RequireTestLabels )
