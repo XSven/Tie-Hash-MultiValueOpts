@@ -1,7 +1,7 @@
+# Prefer numeric version for backwards compatibility
+BEGIN { require 5.010_001 }; ## no critic ( RequireUseStrict, RequireUseWarnings )
 use strict;
 use warnings;
-
-# https://metacpan.org/pod/Tie::Hash::MultiValue
 
 package Tie::Hash::MultiValueOpts;
 
@@ -19,7 +19,7 @@ sub STORE {
       return $current_value
     }
   }
-  $self->{ $key } = $value
+  $self->SUPER::STORE( $key, $value )
 }
 
 1

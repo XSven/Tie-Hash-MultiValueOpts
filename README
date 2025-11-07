@@ -1,6 +1,6 @@
 NAME
 
-Tie::Hash::MultiValueOpts - ...
+Tie::Hash::MultiValueOpts - Store multiple values per option
 
 INSTALLATION
 
