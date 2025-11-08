@@ -5,7 +5,7 @@ use warnings;
 
 package Tie::Hash::MultiValueOpts;
 
-$Tie::Hash::MultiValueOpts::VERSION = 'v1.0.0';
+$Tie::Hash::MultiValueOpts::VERSION = 'v1.0.1';
 
 use Tie::Hash ();
 use parent -norequire, 'Tie::StdHash';

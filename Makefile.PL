@@ -37,10 +37,6 @@ my %att = (
       $main_module => {
         file    => catfile( 'lib', $main_module_file ),
         version => $main_module_version
-      },
-      join( '::', $main_module, 'CLI' ) => {
-        file    => catfile( 'lib', @main_module_namespace, 'CLI' ) . '.pm',
-        version => $main_module_version
       }
     },
     resources => {
