@@ -44,6 +44,10 @@ L<Tie::Hash::MultiValue>
 
 L<Tie::Hash::MultiValueOrdered>
 
+=item *
+
+L<Hash::MultiValue>
+
 =back
 
 =head1 AUTHOR
