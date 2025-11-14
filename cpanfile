@@ -10,12 +10,13 @@ on configure => sub {
 };
 
 on runtime => sub {
-  requires 'Getopt::Std' => '0';
-  requires 'Tie::Hash'   => '0';
-  requires 'strict'      => '0';
-  requires 'warnings'    => '0'
+  requires 'Tie::Hash' => '0';
+  requires 'parent'    => '0';
+  requires 'strict'    => '0';
+  requires 'warnings'  => '0'
 };
 
 on test => sub {
+  requires 'Getopt::Std' => '0';
   requires 'Test::More' => '1.001005'    # Subtests accept args
 }
