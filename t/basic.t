@@ -39,7 +39,7 @@ subtest '-l repeated 2 times' => sub {
   is_deeply $opts{ l }, [ qw( bar baz ) ], 'Option "l" refers to a list with 2 elements'
 };
 
-subtest '-l repeated 3 times; ' => sub {
+subtest '-l repeated 3 times; undef element in list although getopts has failed' => sub {
   plan tests => 5;
 
   tie my %opts, 'Tie::Hash::MultiValueOpts', l => [];
